@@ -14,6 +14,12 @@ function time() {
     if (h > 12) {
         us = 'PM'
     }
+    
+     // fixes hour 0
+    if (h = 12) {
+        h = 12
+    }
+
 
     // Adds the 0 infront of the number if its less than 2 digits
     if (h < 10) {
