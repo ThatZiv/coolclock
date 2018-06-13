@@ -9,11 +9,11 @@ function time() {
     //milliseconds
    // var ms = time.getMilliseconds();
 
+    //Fixes hour 12 >> 0
+    h = h ? h : 12; 
+    
     // Declaration of AM or PM
-    var us = 'AM';
-    if (h => 12) {
-        us = 'PM'
-    }
+    var us = h >= 12 ? 'PM' : 'AM';
 
     // Adds the 0 infront of the number if its less than 2 digits
     if (h < 10) {
