@@ -1,16 +1,13 @@
 function time() {
     var time = new Date();
     //hours
-    var h = time.getHours() % 12;
+    var h = time.getHours() % 12 || 12;
     //mins
     var m = time.getMinutes();
     //seconds
     var s = time.getSeconds();
     //milliseconds
    // var ms = time.getMilliseconds();
-
-    //Fixes hour 12 >> 0
-    h = h ? h : 12; 
     
     // Declaration of AM or PM
     var us = h >= 12 ? 'PM' : 'AM';
