@@ -11,7 +11,7 @@ function time() {
 
     // Declaration of AM or PM
     var us = 'AM';
-    if (h > 12) {
+    if (h < 12) {
         us = 'PM'
     }
 
